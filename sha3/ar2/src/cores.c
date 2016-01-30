@@ -77,7 +77,7 @@ static void store_block(void *output, const block *src) {
         store64((uint8_t *)output + i * sizeof(src->v[i]), src->v[i]);
     }
 }
-
+  
 /***************Memory allocators*****************/
 int allocate_memory(block **memory, uint32_t m_cost) {
     if (memory != NULL) {
